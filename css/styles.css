@@ -50,6 +50,13 @@
     top: 0;
     left: 0;
 }
+.logo{
+    max-width: 80px;
+    max-height:80px;
+}
+#webname{
+    color:rgb(145, 37, 30) ;
+}
 #navbar {
     display: flex;
     align-items: center;
@@ -85,7 +92,7 @@
 }
 /*promotion page*/
 #promotion{
-    background-image:url("../image/setup.jpg") ;
+    background-image:url("../image/pc.jpg") ;
     height: 100vh;
     background-position: top 25% right 0 ;
     background-size: cover;
@@ -101,10 +108,11 @@
     color:rgb(0, 0, 0)
 }
 #promotion h2{
-    color:rgb(0, 138, 202);
+    color:white;
 }
 #promotion h1{
-    color:rgb(255, 0, 0)
+    color:rgb(255, 0, 0);
+    font-style: aboreto;
 }
 #promotion button{
    width:100x;
