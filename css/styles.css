@@ -3,7 +3,7 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Spartan' , sans-serif;
+    font-family: 'Aboreto', cursive;
 }
 .h1 {
     font-size: 50px;
@@ -28,7 +28,8 @@
     color:#465b52;
     margin: 15px 0 20px 0;
 }
-.section-p1{
+.section-p1
+{
     padding: 40px 80px;
 }
 .section-m1{
@@ -52,7 +53,7 @@
 }
 .logo{
     max-width: 80px;
-    max-height:80px;
+    max-height 80px;
 }
 #webname{
     color:rgb(145, 37, 30) ;
@@ -102,24 +103,25 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    
 }
 #promotion h4{
     padding-bottom: 15px ;
     color:rgb(0, 0, 0)
 }
 #promotion h2{
-    color:white;
+    color:white;;
 }
 #promotion h1{
-    color:rgb(255, 0, 0);
-    font-style: aboreto;
+    color:rgb(255, 5, 5);
+ 
 }
 #promotion button{
    width:100x;
    height: 50px;
    border: none;
    color: whitesmoke;
-   background-color: rgb(255, 0, 68);
+   background-color: transparent;
    border-radius: 4px;
    box-shadow: inset 0 0 0 0 #f9e506;
    transition:ease-out 0.3s ;
@@ -130,4 +132,35 @@
     box-shadow: inset 300px 0 0 0 rgb(0, 0, 0) ;
     cursor: pointer;
     color: whitesmoke;
+}
+/*features*/
+#feature { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#feature .fe-box{
+    width: 180px ;
+    text-align: center;
+    padding:25px 15px ;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03) ;
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin:15px 0;
+}
+#feature .fe-box:hover{
+    box-shadow: 10 px 10px 54px rgba(70, 62, 221, 0.1) ;
+}
+#feature .fe-box img{
+    widh: 100%;
+    margin-bottom: 10 px ;
+}
+#feature .fe-box h6{
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: rgb(145, 37, 30);
+    background-color: #fddde4;
 }
