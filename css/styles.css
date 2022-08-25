@@ -165,7 +165,7 @@ button.normal{
 #feature .fe-box:hover{
     box-shadow: 10 px 10px 54px rgba(70, 62, 221, 0.1) ;
 }
-#feature .fe-box img{
+#feature .fe-box img{5
     width: 50%;
     margin-bottom: 10 px ;
 }
@@ -233,7 +233,8 @@ flex-wrap: wrap;
     height: 40px;
     line-height: 40px;
     border-radius: 50px;
-    background-color: #e8f6ea;
+    background-color: #cce7d0;
+    color: aqua;
     font-weight: 500;
     border: 1px solid #cce7d0;
     position: absolute;
@@ -270,4 +271,64 @@ flex-wrap: wrap;
     box-shadow: inset 300px 0 0 0 rgb(0, 0, 0) ;
     cursor: pointer;
     color: rgb(0, 217, 255);
+}
+/*newsletter & sign up*/
+#newsletter{
+    display: flex;
+    justify-content:space-between ;
+    flex-wrap:wrap ;
+    align-items: center;
+    background-image:url("../image/5s.jpg") ;
+}
+#newsletter h4{
+    font-size: 22px ;
+    font-weight: 700;
+    color:#fff
+}
+#newsletter p{
+    font-size: 14px ;
+    font-weight: 600;
+    color:rgb(0, 217, 255);
+}
+#newsletter .form{
+    display: flex;
+    width:40%;
+}
+#newsletter input {
+height: 3.125 em;
+padding: 0 1.25em;
+font-size: 14px;
+width: 100%;
+border: 1px solid transparent;
+border-radius: 4px;
+outline:none;
+border-bottom-right-radius:0 ;
+border-bottom-right-radius: 0;
+}
+#newsletter button{
+    color: rgb(0, 217, 255);
+    background-color: rgb(0, 0, 0) ;
+    cursor: pointer;
+    border-bottom-left-radius:0 ;
+    border-bottom-left-radius: 0
+}
+
+/*index2*/
+#hardware{
+    background-image: url("../image/motherbord.jpg");
+    width: 100%;
+    height:40vh;
+    background-size: cover;
+    display: flex;
+    justify-content:center ;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+#hardware h2{
+    color: rgb(0, 217, 255);
+}
+
+.intel{
+    text-align: center;
 }
