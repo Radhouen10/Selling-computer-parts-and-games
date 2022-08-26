@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Poppins:ital@1&display=swap" rel="stylesheet">
+    
     <title>Smart shop</title>
 </head>
 <body>
+    <script src="../js/main.js"></script>
     <!--Navbar & Logo creation -->
      <section id="header" >
         <a href="#"><img  src="../image/Faza.jpg" class="logo" alt=""><h6 id="webname" ><smal>Smart shop</smal></h6> </a>
@@ -19,7 +22,7 @@
            <ul id="navbar">
             <li><a  href="index.html">Home</a></li>
             <li><a  href="../html/index2.HTML">hardware & equipments</a></li> 
-            <li><a   class="active" href="../html/Cart.html"><i class="fa-solid fa-cart-plus"></i></a>
+            <li><a   class="active" ><i class="fa-solid fa-cart-plus" onclick="checkout()"></i></a>
            </ul>
         </div>
          </section>
@@ -33,32 +36,31 @@
        <td> Product </td> 
        <td> price </td> 
        <td>quantity </td> 
-       <td> Subtotal </td> 
+    
     </tr>
     <tbody>
         <tr>
          <td><a href="#"><i class="fa-solid fa-xmark"></a></i></td> 
-         <td><img src="../image/Cpu/i3.png" alt=""> </td>
-         <td>Intel Core i3-10105F BOX (3.7 GHz / 4.4 GHz)</td> 
-         <td>299 TND</td>
+         <td id="imge"> </td>
+         <td id="mdl"></td> 
+         <td id="price"></td>
          <td><input type="number" value="1" >  </td> 
-         <td>299 TND</td>
         </tr>
         <tr>
             <td><a href="#"><i class="fa-solid fa-xmark"></a></i></td> 
-            <td><img src="../image/Cpu/i3.png" alt=""> </td>
-            <td>Intel Core i3-10105F BOX (3.7 GHz / 4.4 GHz)</td> 
-            <td>299 TND</td>
+            <td><img src="" alt=""> </td>
+            <td></td> 
+            <td></td>
             <td><input type="number" value="1" >  </td> 
-            <td>299 TND</td>
+            
            </tr>
            <tr>
             <td><a href="#"><i class="fa-solid fa-xmark"></a></i></td> 
-            <td><img src="../image/Cpu/i3.png" alt=""> </td>
-            <td>Intel Core i3-10105F BOX (3.7 GHz / 4.4 GHz)</td> 
-            <td>299 TND</td>
+            <td><img src="" alt=""> </td>
+            <td></td> 
+            <td></td>
             <td><input type="number" value="1" >  </td> 
-            <td>299 TND</td>
+            
            </tr>   
     </tbody>
 </thead>
@@ -88,17 +90,17 @@
         <section id="newsletter" class="section-p1 section-m1">
 <div class ="newstext">
 <h4>Sign up for newsletters</h4>
-<p>Get E-mail updates about our latest products and <span> Special offer</span> </p>
+<p>Get E-mail updates about our latest products and <span> Special offers</span> </p>
 </div>
 <div class="form">
-<input type="text" placeholder="your email adress">
-    <button class="normal"> Sign up</button>
+<input id="email" type="text" placeholder="your email adress">
+    <button class="normal" onclick="sendnewstoemail()" > Subscribe </button>
 </div>
         </section>  
          <!--footer-->   
      
 
-    <script src="Final.JS"></script>
+    
     
 </body>
 </html>

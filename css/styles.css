@@ -228,19 +228,6 @@ flex-wrap: wrap;
     font-weight: 700 ;
     color:rgb(145, 37, 30);
 }
-#product1 .pro i{
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 50px;
-    background-color: #cce7d0;
-    color: aqua;
-    font-weight: 500;
-    border: 1px solid #cce7d0;
-    position: absolute;
-    bottom: 20px ;
-    right: 10px ;
-}
 /*banner & laptop section*/
 #banner{
     display: flex;

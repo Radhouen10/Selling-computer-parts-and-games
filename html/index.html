@@ -14,6 +14,7 @@
     <title>Smart shop</title>
 </head>
 <body>
+    <script src="../js/main.js"></script>
     <!--Navbar & Logo creation -->
      <section id="header" >
         <a href="#"><img  src="../image/Faza.jpg" class="logo" alt=""><h6 id="webname" ><smal>Smart shop</smal></h6> </a>
@@ -22,7 +23,7 @@
             <li><a class="active" href="index.html">Home</a></li>
             <li><a href="../html/index2.HTML">hardware & equipments</a></li>
            
-            <li><a href="../html/Cart.html"><i class="fa-solid fa-cart-plus"></i></a>
+            <li><a href="../html/Cart.html"><i class="fa-solid fa-cart-plus" onclick="checkout()"></i></a>
            </ul>
         </div>
          </section>
@@ -62,10 +63,10 @@
 <br/>
      <div class="pro-contaner">
         <div class="pro">
-<img src="../image/PC/1.png" alt="">
+<img id="img" src="../image/PC/1.png" alt="">
 <div class="des">
-    <span> AMD </span>
-    <h5> AMD Ryzen Gaming Starter PC</h5>
+    <span id="mark" > AMD </span>
+    <h5 id="model" > AMD Ryzen Gaming Starter PC</h5>
     <div class="star" >
 <i class="fas fa-star"></i>
 <i class="fas fa-star"></i>
@@ -73,9 +74,9 @@
 <i class="fas fa-star"></i>
 <i class="fas fa-star"></i>
     </div>
-    <h4>2.997 TND</h4>
+    <h4 id ="price">2.997 TND</h4>
 </div>
-<a href="#"><i class="fa-solid fa-cart-circle-plus "></i> </a>
+<a href="#"><i id="add" class="fa-solid fa-cart-plus cart "  onclick="addtocart()"></i> </a>
         </div>
         <div class="pro">
             <img src="../image/PC/2.png" alt="">
@@ -91,13 +92,13 @@
                 </div>
                 <h4> 3.300 TND</h4>
             </div>
-            <a href="#"><i class="fa-solid fa-cart-circle-plus cart"></i> </a>
+            <a href="#"><i class="fa-solid fa-cart-plus cart " onclick="addtocart()" ></i> </a>
                     </div>
                     <div class="pro">
-                        <img src="../image/PC/3.png" alt="">
+                        <img id="img2" src="../image/PC/3.png" alt="">
                         <div class="des">
-                            <span> Intel </span>
-                            <h5> Intel gaming Pc DDR4 Configurator 1</h5>
+                            <span id="mark2" > Intel </span>
+                            <h5 id="model2"> Intel gaming Pc DDR4 Configurator 1</h5>
                             <div class="star" >
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -105,9 +106,9 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                             </div>
-                            <h4>3.050 TND</h4>
+                            <h4 id="price2" >3.050 TND</h4>
                         </div>
-                        <a href="#"><i class="fa-solid fa-cart-plus cart "  ></i> </a>
+                        <a href="#"><i class="fa-solid fa-cart-plus cart " onclick="addtocart()" ></i> </a>
                                 </div>
                                 <div class="pro">
                                     <img src="../image/PC/4.png" alt="">
@@ -123,7 +124,7 @@
                                         </div>
                                         <h4>3.710 TND</h4>
                                     </div>
-                                    <a href="#"><i class="fa-solid fa-cart-plus  "  ></i> </a>
+                                    <a href="#"><i class="fa-solid fa-cart-plus  " onclick="addtocart()" ></i> </a>
                                             </div>
                                             <div class="pro">
                                                 <img src="../image/Faza.jpg" alt="">
@@ -139,7 +140,7 @@
                                                     </div>
                                                     <h4>2.997 TND</h4>
                                                 </div>
-                                                <a href="#"><i class="fa-solid fa-cart-plus  "  ></i> </a>
+                                                <a href="#"><i class="fa-solid fa-cart-plus  "  onclick="addtocart()"></i> </a>
                                                         </div>
                                                         <div class="pro">
                                                             <img src="../image/PC/5.png" alt="">
@@ -171,7 +172,7 @@
                                                                             </div>
                                                                             <h4>4.800 TND</h4>
                                                                         </div>
-                                                                        <a href="#"><i class="fa-solid fa-cart-plus cart "  ></i> </a>
+                                                                        <a href="#"><i class="fa-solid fa-cart-plus cart " onclick="addtocart()" ></i> </a>
                                                                                 </div>
                                                                                 <div class="pro">
                                                                                     <img src="../image/PC/6.jpg" alt="">
@@ -187,7 +188,7 @@
                                                                                         </div>
                                                                                         <h4>7.399 TND</h4>
                                                                                     </div>
-                                                                                    <a href="#"><i class="fa-solid fa-cart-plus cart "  ></i> </a>
+                                                                                    <a href="#"><i class="fa-solid fa-cart-plus cart " onclick="addtocart()" ></i> </a>
                                                                                             </div>
                                                                     
                                                                                                                                                                                     
@@ -196,9 +197,9 @@
      </section>
      <!--Banner -->
      <section id="banner" class="section-m1" >
-        <h4> new Laptops </h4>
+        <h4> new Laptops and other items  </h4>
         <h2>up to <span>20% off</span> on this list </h2>
-        <button class="normal" > Explore more </button>
+        <button class="normal" > <a href="../html/index2.HTML" alt="" >Explore more </a></button>
       </section>
       <section id="product1"class="section-p1" >
         <h2> New arrivals</h2>
@@ -219,7 +220,7 @@
             </div>
             <h4>4.347 TND</h4>
         </div>
-        <a href="#"><i class="fa-solid fa-cart-plus cart "  ></i> </a>
+        <a href="#"><i class="fa-solid fa-cart-plus cart " onclick="addtocart()" ></i> </a>
                 </div>
                 <div class="pro">
                     <img src="../image/Laptops/L2.png" alt="">
@@ -235,7 +236,7 @@
                         </div>
                         <h4> 4.242 TND</h4>
                     </div>
-                    <a href="#"><i class="fa-solid fa-cart-plus cart "  ></i> </a>
+                    <a href="#"><i class="fa-solid fa-cart-plus cart " onclick="addtocart()" ></i> </a>
                             </div>
                             <div class="pro">
                                 <img src="../image/Laptops/l1.png" alt="">
@@ -251,7 +252,7 @@
                                     </div>
                                     <h4>7.690 TND</h4>
                                 </div>
-                                <a href="#"><i class="fa-solid fa-cart-plus cart "  ></i> </a>
+                                <a href="#"><i class="fa-solid fa-cart-plus cart " onclick="addtocart()" ></i> </a>
                                         </div>
                                         <div class="pro">
                                             <img src="../image/Laptops/l4.jpg" alt="">
@@ -267,7 +268,7 @@
                                                 </div>
                                                 <h4>5.710 TND</h4>
                                             </div>
-                                            <a href="#"><i class="fa-solid fa-cart-plus cart "  ></i> </a>
+                                            <a href="#"><i class="fa-solid fa-cart-plus cart " onclick="addtocart()" ></i> </a>
                                                     </div>
                                                     <div class="pro">
                                                         <img src="../image/Laptops/l1.png" alt="">
@@ -283,7 +284,7 @@
                                                             </div>
                                                             <h4>3.555 TND</h4>
                                                         </div>
-                                                        <a href="#"><i class="fa-solid fa-cart-plus cart "  ></i> </a>
+                                                        <a href="#"><i class="fa-solid fa-cart-plus cart " onclick="addtocart()" ></i> </a>
                                                                 </div>
                                                                 <div class="pro">
                                                                     <img src="../image/Laptops/l3.png" alt="">
@@ -299,7 +300,7 @@
                                                                         </div>
                                                                         <h4>10.497 TND</h4>
                                                                     </div>
-                                                                    <a href="#"><i class="fa-solid fa-cart-plus cart "  ></i> </a>
+                                                                    <a href="#"><i class="fa-solid fa-cart-plus cart "  onclick="addtocart()"></i> </a>
                                                                             </div>
                                                                             <div class="pro">
                                                                                 <img src="../image/Laptops/l3.png" alt="">
@@ -315,7 +316,7 @@
                                                                                     </div>
                                                                                     <h4>10.122TND</h4>
                                                                                 </div>
-                                                                                <a href="#"><i class="fa-solid fa-cart-plus cart "  ></i> </a>
+                                                                                <a href="#"><i class="fa-solid fa-cart-plus cart " onclick="addtocart()" ></i> </a>
                                                                                         </div>
                                                                                         <div class="pro">
                                                                                             <img src="../image/Laptops/l5.png" alt="">
@@ -331,7 +332,7 @@
                                                                                                 </div>
                                                                                                 <h4>5.397 TND</h4>
                                                                                             </div>
-                                                                                            <a href="#"><i class="fa-solid fa-cart-plus cart "  ></i> </a>
+                                                                                            <a href="#"><i class="fa-solid fa-cart-plus cart " onclick="addtocart()" ></i> </a>
                                                                                                     </div>
                                                                             
                                                                                                                                                                                             
@@ -342,17 +343,17 @@
         <section id="newsletter" class="section-p1 section-m1">
 <div class ="newstext">
 <h4>Sign up for newsletters</h4>
-<p>Get E-mail updates about our latest products and <span> Special offer</span> </p>
+<p>Get E-mail updates about our latest products and <span> Special offers</span> </p>
 </div>
 <div class="form">
-<input type="text" placeholder="your email adress">
-    <button class="normal"> Sign up</button>
+<input id="email" type="email" placeholder="your email adress">
+    <button class="normal" onclick="sendnewstoemail()"> Subscribe </button>
 </div>
         </section>  
          <!--footer-->   
      
 
-    <script src="../js/main.js"></script>
+
     
 </body>
 </html>
